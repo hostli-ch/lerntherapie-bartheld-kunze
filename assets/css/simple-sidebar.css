@@ -1,0 +1,512 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* COLORS
+    #3764a0
+    rgb(55, 100, 160)
+
+#4278c0
+rgb(66, 120, 192)
+
+#4d8ce0
+rgb(77, 140, 224)
+
+    #d7d7eb
+    rgb(215, 215, 235)
+
+ */
+
+body {
+    font-family: sans-serif;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAALUlEQVQoU2NkIAIwEqGGAa+i/fv3+zg6Om6h3CSYUzBMglmB7FYqW4fNCmTrAAiUDAq5wsP2AAAAAElFTkSuQmCC) repeat;
+    font-size: 11pt;
+    line-height: 1.8;
+}
+
+.container {
+    width: 100%;
+}
+
+.simple-sidebar-mobile {
+    background: #3764a0;
+}
+
+.simple-sidebar-mobile span {
+    background-color: white;
+}
+
+.simple-sidebar-mobile button {
+    border-color: white;
+}
+
+.simple-sidebar {
+    /*
+    margin-top: 16px;
+    */
+    -webkit-box-shadow: -8px -0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px -0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -8px -0px 5px 0px rgba(0,0,0,0.75);
+    height: 100vh;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3764a0+0,3764a0+30,d7d7eb+100 */
+    background: #3764a0;
+    background: -moz-linear-gradient(top, #3764a0 0%, #3764a0 30%, #d7d7eb 100%);
+    background: -webkit-linear-gradient(top, #3764a0 0%, #3764a0 30%, #d7d7eb 100%);
+    background: linear-gradient(to bottom, #3764a0 0%, #3764a0 30%, #d7d7eb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3764a0', endColorstr='#d7d7eb', GradientType=0);
+}
+
+.simple-sidebar .logo-wrapper {
+    position: absolute;
+    bottom: 5vh;
+    left: 0;
+}
+
+.simple-sidebar .logo-wrapper img {
+    width: 100%;
+    padding: 16px;
+}
+
+/* Sidebar Styles */
+.sidebar-nav {
+    padding: 15% 0;
+    list-style: none;
+}
+
+.navbar-nav li > a,
+.simple-sidebar-mobile i,
+.simple-sidebar-mobile li > a {
+    color: white;
+}
+
+.sidebar-nav li,
+.sidebar-nav li > a {
+    display: block;
+    width: 100%;
+    padding: 3px 0;
+    font-size: 13pt;
+    line-height: 2;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-nav li > a:hover,
+.sidebar-nav li > a:hover {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.modal-header .close {
+    margin-top: -8px;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 72%;
+        max-width: 1024px;
+    }
+}
+
+.modal-content {
+    padding: 2% 2%;
+}
+
+/* Borrowed from twilli */
+/* -------------- BUTTONS ----------------- */
+
+.btn {
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    border-radius: 0;
+    font-family: 'open_sanslight', sans-serif;
+}
+
+.btn-outline-inverse {
+    color: white;
+    text-shadow: none;
+    background-color: #3764a0;
+    border-color: #3764a0;
+}
+
+.btn-outline-inverse:hover,
+.btn-outline-inverse:focus,
+.btn-outline-inverse:active {
+    color: #3764a0;
+    background-color: transparent;
+    border-color: #3764a0;
+}
+
+.btn {
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    text-decoration: none;
+    outline: none !important;
+}
+
+.btn-lg {
+    font-size: 0.9em;
+    padding: 13px 30px;
+}
+
+.btn-sm {
+    font-size: 0.73em;
+    padding: 10px 26px;
+}
+
+.btn-xs {
+    font-size: 0.65em;
+    padding: 6px 18px;
+}
+
+@media (min-width: 768px) {
+    .btn-lg {
+        font-size: 0.95em;
+    }
+
+    .btn-sm {
+        font-size: 0.80em;
+    }
+
+    .btn-xs {
+        font-size: 0.70em;
+    }
+}
+
+@media (min-width: 992px) {
+    .btn-lg {
+        font-size: 1.05em;
+    }
+
+    .btn-sm {
+        font-size: 0.95em;
+    }
+
+    .btn-xs {
+        font-size: 0.75em;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+/* General Styles */
+
+footer {
+    background: none;
+}
+
+header:before, section:before {
+    display: block;
+    content: " ";
+    height: 60px;
+    visibility: hidden;
+}
+
+section {
+    padding: 2% 1% 4% 1%;
+}
+
+h1 {
+    color: #3764a0;
+    font-size: 1.8em;
+    line-height: 1.1;
+    margin: 0.5em 0;
+   /*  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.33); */
+}
+
+h2 {
+    font-size: 1.85em;
+    line-height: 1.1;
+    margin: 0.55em 0;
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33); */
+}
+
+h3 {
+    font-size: 1.45em;
+    line-height: 1.1;
+    margin: 0.6em 0;
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33); */
+}
+
+h4 {
+    font-size: 1.25em;
+    line-height: 1.1;
+    margin: 0.65em 0;
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33); */
+}
+
+h5 {
+    font-size: 1.15em;
+    line-height: 1.1;
+    margin: 0.7em 0;
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33); */
+}
+
+h6 {
+    font-size: 1.05em;
+    line-height: 1.1;
+    margin: 0.7em 0;
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33); */
+}
+
+a, a:visited, .sitemap-top-level li p, i {
+    color: #3764a0;
+}
+
+a:hover {
+    color: #4d8ce0;
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 6% 4% 4% 4%;
+    }
+
+    header:before, section:before {
+        display: block;
+        content: " ";
+        height: 0px;
+        visibility: hidden;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.95em;
+    }
+
+    h3 {
+        font-size: 1.65em;
+    }
+
+    h4 {
+        font-size: 1.28em;
+    }
+
+    h5 {
+        font-size: 1.15em;
+    }
+
+    h6 {
+        font-size: 1.05em;
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 3.1em;
+    }
+
+    h2 {
+        font-size: 2.4em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.6em;
+    }
+
+    h5 {
+        font-size: 1.3em;
+    }
+
+    h6 {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 300px) {
+    .custom-hyphen {
+        display: none;
+    }
+}
+
+/* ====================================================
+   TABS
+   - styling inspiration and guide:
+   - http://tympanus.net/codrops/2014/09/02/tab-styles-inspiration/
+   ==================================================== */
+
+.tabpanel {
+    position: relative;
+    overflow: hidden;
+}
+
+.tabpanel.styled-tabs ul.nav {
+    position: relative;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    -ms-box-pack: center;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    border-bottom-color: rgba(55, 100, 160, 0.2);
+}
+
+.tabpanel.styled-tabs ul.nav > li {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0;
+    text-align: center;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.tabpanel.styled-tabs ul.nav > li > a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 2.5;
+    padding: 0.1em 0 0.65em;
+    color: rgba(55, 100, 160, 0.6);
+    -webkit-transition: all 0.4s, padding 0.2s;
+    transition: all 0.4s, padding 0.2s;
+    border: none !important;
+}
+
+.tabpanel.styled-tabs ul.nav > li > a > .icon {
+    margin-right: 8px;
+    font-size: 1.35em;
+    vertical-align: middle;
+}
+
+.tabpanel.styled-tabs ul.nav[text-hidden-xs="true"] > li > a > .icon {
+    font-size: 1.75em;
+    margin-right: 0;
+}
+
+.tabpanel.styled-tabs ul.nav > li > a > span {
+    font-size: 0.8em;
+}
+
+.tabpanel.styled-tabs ul.nav[text-hidden-xs="true"] > li > a > span {
+    display: none;
+}
+
+.tabpanel.styled-tabs ul.nav > li > a:hover, .tabpanel.styled-tabs ul.nav > li > a:focus {
+    color: #3764a0;
+    padding: 0.35em 0 0.4em;
+    background: none;
+}
+
+.tabpanel.styled-tabs ul.nav > li.active > a, .tabpanel.styled-tabs ul.nav > li.active > a:hover, .tabpanel.styled-tabs ul.nav > li.active > a:focus {
+    color: #3764a0;
+    padding: 0.1em 0 0.65em;
+    background: none;
+}
+
+.tabpanel.styled-tabs ul.nav > li > a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #3764a0;
+    content: '';
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform: translate3d(0, 150%, 0);
+    transform: translate3d(0, 150%, 0);
+}
+
+.tabpanel.styled-tabs ul.nav > li.active > a::after {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+@media (min-width: 768px) {
+    .tabpanel.styled-tabs ul.nav > li > a {
+        font-size: 0.9em;
+    }
+
+    .tabpanel.styled-tabs ul.nav > li > a > .icon, .tabpanel.styled-tabs ul.nav[text-hidden-xs="true"] > li > a > .icon {
+        margin-right: 11px;
+        font-size: 1.5em;
+    }
+
+    .tabpanel.styled-tabs ul.nav[text-hidden-sm="true"] > li > a > .icon {
+        font-size: 1.75em;
+        margin-right: 0;
+    }
+
+    .tabpanel.styled-tabs ul.nav > li > a > span {
+        font-size: 0.9em;
+    }
+
+    .tabpanel.styled-tabs ul.nav[text-hidden-xs="true"] > li > a > span {
+        display: inline;
+    }
+
+    .tabpanel.styled-tabs ul.nav[text-hidden-sm="true"] > li > a > span {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .tabpanel.styled-tabs ul.nav > li > a {
+        font-size: 1em;
+    }
+
+    .tabpanel.styled-tabs ul.nav > li > a > .icon, .tabpanel.styled-tabs ul.nav[text-hidden-xs="true"] > li > a > .icon, .tabpanel.styled-tabs ul.nav[text-hidden-sm="true"] > li > a > .icon {
+        margin-right: 12px;
+        font-size: 1.6em;
+    }
+
+    .tabpanel.styled-tabs ul.nav[text-hidden-md="true"] > li > a > .icon {
+        font-size: 1.75em;
+        margin-right: 0;
+    }
+
+    .tabpanel.styled-tabs ul.nav[text-hidden-sm="true"] > li > a > span {
+        display: inline;
+    }
+
+    .tabpanel.styled-tabs ul.nav[text-hidden-md="true"] > li > a > span {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+}
+
+.tabpanel.styled-tabs .tab-content > .tab-pane {
+    padding: 15px 0;
+}
+
+@media (min-width: 768px) {
+    .tabpanel.styled-tabs .tab-content > .tab-pane {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.tabpanel.styled-tabs .tab-content > .tab-pane p {
+    font-size: 1em;
+}

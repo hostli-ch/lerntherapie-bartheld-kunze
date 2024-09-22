@@ -1,0 +1,10 @@
+#links ul {
+    list-style: none;
+}
+
+@media (max-width: 767px) {
+    #links ul{
+        margin: 0;
+        padding: 0;
+    }
+}

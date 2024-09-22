@@ -1,0 +1,42 @@
+#home {
+    height: 100vh;
+    min-height: 320px;
+    /* width: 100%; */
+    padding: 12vh 2% 0 2%;
+    overflow: hidden;
+}
+
+#home h1 {
+    color: #3764a0;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+#home .home-bars {
+    background: #3764a0;
+    height: 10px;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#home .home-head {
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+}
+
+#home:before {
+    display: block;
+    content: " ";
+    height: 0px;
+    visibility: hidden;
+}
+
+@media (min-width: 768px) {
+    #home {
+        padding: 10vh 10% 0 10%;
+    }
+
+    #home .home-head {
+        margin-top: 16vh;
+    }
+}
