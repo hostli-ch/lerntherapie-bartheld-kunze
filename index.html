@@ -855,7 +855,20 @@
         var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
         // Adding layer to the map
         map.addLayer(layer);
-        let marker = new L.Marker([52.1616608, 10.5388948]);
+        let myIcon = L.icon({
+            // Pfad zur hochauflösenden Datei auf deinem Server
+            iconUrl: './assets/js/images/marker-icon-2x.png',
+            iconRetinaUrl: './assets/js/images/marker-icon-2x.png',
+            // Zwingt die Karte, das Bild auf Standardgröße zu skalieren
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            // Pfad zum Schatten (falls nicht vorhanden, Zeilen weglassen)
+            shadowUrl: './assets/js/images/marker-shadow.png',
+            shadowSize: [41, 41]
+        });
+
+        let marker = new L.Marker([52.1616608, 10.5388948], {icon: myIcon});
         marker.addTo(map);
     </script>
 
